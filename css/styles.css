@@ -1,2 +1,24 @@
 body {
-  background-color: aliceblue; }
+  background-color: mintcream;
+  display: flex;
+  font-size: x-large;
+  margin-top: 20px; }
+
+nav {
+  width: 20%;
+  position: fixed; }
+  nav ul {
+    margin: 0; }
+
+main {
+  width: 80%;
+  margin-left: 20%;
+  padding: 0 50px; }
+
+a,
+a:visited {
+  text-decoration: none;
+  color: black; }
+
+a.current {
+  color: purple; }
