@@ -1,3 +1,7 @@
+:root {
+    --purple: rgb(92, 0, 128);
+}
+
 body {
     background-color: mintcream;
     display: flex;
@@ -25,6 +29,12 @@ a:visited {
     color: black;
 }
 
-a.current {
-    color: purple;
+a.current,
+a:hover {
+    color: var(--purple);
+    border-bottom: 1px dotted var(--purple);
+}
+
+h1, h2, h3 {
+    color: var(--purple);
 }
