@@ -1,0 +1,14 @@
+{
+  "name": "the-black-lute",
+  "version": "1.0.0",
+  "description": "The Black Lute",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w ./scss/ -o css/ --recursive"
+  },
+  "author": "Omar Ochoa",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
