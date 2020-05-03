@@ -1,9 +1,10 @@
 :root {
-    --purple: rgb(92, 0, 128);
+    --purple: #5d3f79;
+    --purplish-gray: #d6d4d8;
 }
 
 body {
-    background-color: mintcream;
+    background-color: var(--purplish-gray);
     display: flex;
     font-size: x-large;
     margin-top: 20px;
