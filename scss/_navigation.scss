@@ -1,6 +1,4 @@
 nav {
-    width: 20%;
-    position: fixed;
     ul {
         margin: 0;
     }
@@ -15,5 +13,9 @@ nav {
         color: var(--purple);
         text-decoration: underline;
         text-decoration-style: dotted;
+    }
+    @media (min-width: 1024px) {
+        width: 20%;
+        position: fixed;
     }
 }

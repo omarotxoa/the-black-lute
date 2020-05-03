@@ -3,9 +3,11 @@
 
 body {
     background-color: var(--purplish-gray);
-    display: flex;
     font-size: x-large;
     margin-top: 20px;
+    @media (min-width: 1024px) {
+        display: flex;
+    }
 }
 
 h1, h2, h3 {
@@ -13,11 +15,13 @@ h1, h2, h3 {
 }
 
 main {
-    width: 80%;
-    margin-left: 20%;
-    padding: 0 50px;
-    a {
-        color: var(--purple);
-        text-decoration-style: dotted;
+    @media (min-width: 1024px) {
+        width: 80%;
+        margin-left: 20%;
+        padding: 0 50px;
+        a {
+            color: var(--purple);
+            text-decoration-style: dotted;
+        }
     }
 }
