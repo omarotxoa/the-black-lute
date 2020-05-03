@@ -2,15 +2,6 @@
   --purple: #5d3f79;
   --purplish-gray: #d6d4d8; }
 
-body {
-  background-color: var(--purplish-gray);
-  display: flex;
-  font-size: x-large;
-  margin-top: 20px; }
-
-h1, h2, h3 {
-  color: var(--purple); }
-
 nav {
   width: 20%;
   position: fixed; }
@@ -25,6 +16,15 @@ nav {
     color: var(--purple);
     text-decoration: underline;
     text-decoration-style: dotted; }
+
+body {
+  background-color: var(--purplish-gray);
+  display: flex;
+  font-size: x-large;
+  margin-top: 20px; }
+
+h1, h2, h3 {
+  color: var(--purple); }
 
 main {
   width: 80%;

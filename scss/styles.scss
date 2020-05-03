@@ -1,7 +1,5 @@
-:root {
-    --purple: #5d3f79;
-    --purplish-gray: #d6d4d8;
-}
+@import 'variables';
+@import 'navigation';
 
 body {
     background-color: var(--purplish-gray);
@@ -10,30 +8,8 @@ body {
     margin-top: 20px;
 }
 
-
-
 h1, h2, h3 {
     color: var(--purple);
-}
-
-nav {
-    width: 20%;
-    position: fixed;
-    ul {
-        margin: 0;
-    }
-    a,
-    a:visited {
-        text-decoration: none;
-        color: black;
-    }
-
-    a.current,
-    a:hover {
-        color: var(--purple);
-        text-decoration: underline;
-        text-decoration-style: dotted;
-    }
 }
 
 main {

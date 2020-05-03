@@ -1,0 +1,19 @@
+nav {
+    width: 20%;
+    position: fixed;
+    ul {
+        margin: 0;
+    }
+    a,
+    a:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+    a.current,
+    a:hover {
+        color: var(--purple);
+        text-decoration: underline;
+        text-decoration-style: dotted;
+    }
+}
