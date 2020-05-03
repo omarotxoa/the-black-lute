@@ -2,41 +2,82 @@
   --purple: #5d3f79;
   --purplish-gray: #d6d4d8; }
 
-nav ul {
-  margin: 0; }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; }
+  nav ul {
+    margin: 0; }
+  nav a,
+  nav a:visited {
+    text-decoration: none;
+    color: black; }
+  nav a.current,
+  nav a:hover {
+    color: var(--purple);
+    text-decoration: underline;
+    text-decoration-style: dotted; }
+  @media (min-width: 768px) {
+    nav {
+      width: 20%;
+      position: fixed;
+      background-color: transparent; } }
 
-nav a,
-nav a:visited {
-  text-decoration: none;
-  color: black; }
+.nav--button {
+  background-color: var(--purple);
+  width: 100%;
+  text-align: right;
+  color: var(--purplish-gray);
+  padding: 10px 20px; }
+  @media (min-width: 768px) {
+    .nav--button {
+      display: none; } }
 
-nav a.current,
-nav a:hover {
-  color: var(--purple);
-  text-decoration: underline;
-  text-decoration-style: dotted; }
-
-@media (min-width: 1024px) {
-  nav {
-    width: 20%;
-    position: fixed; } }
+.nav--menu {
+  display: none;
+  text-align: right;
+  margin: 10px;
+  width: 100%;
+  border: 1px solid var(--purple);
+  padding: 10px; }
+  .nav--menu.show {
+    display: initial; }
+  .nav--menu li {
+    list-style: none;
+    padding: 5px 0; }
+  @media (min-width: 768px) {
+    .nav--menu {
+      display: initial;
+      border: 0;
+      border-right: 1px dotted var(--purple);
+      padding-right: 20px;
+      margin-right: 0; } }
 
 body {
   background-color: var(--purplish-gray);
-  font-size: x-large;
-  margin-top: 20px; }
-  @media (min-width: 1024px) {
+  font-size: large;
+  margin: 0; }
+  @media (min-width: 768px) {
     body {
-      display: flex; } }
+      display: flex;
+      font-size: x-large; } }
 
 h1, h2, h3 {
   color: var(--purple); }
 
-@media (min-width: 1024px) {
-  main {
-    width: 80%;
-    margin-left: 20%;
-    padding: 0 50px; }
-    main a {
-      color: var(--purple);
-      text-decoration-style: dotted; } }
+h1 {
+  margin-top: 0; }
+  @media (min-width: 768px) {
+    h1 {
+      margin-top: 32px; } }
+
+main {
+  padding: 10px; }
+  @media (min-width: 768px) {
+    main {
+      width: 80%;
+      margin-left: 20%;
+      padding: 0 50px; }
+      main a {
+        color: var(--purple);
+        text-decoration-style: dotted; } }
