@@ -1,5 +1,5 @@
 # The Black Lute
-The Black Lute is a website I'm making to help organize and facilitate my learning. While it is primarily for myself, I will be designing and posting content in such a way that it'd be useful to other people as well. 
+The Black Lute is a website I'm making to help organize and facilitate my learning. While it is primarily for myself, I will be designing and posting content in such a way that it'd be useful to other people as well. In this sense, the Black Lute is a website dedicated to providing resources for those interested in learning Flamenco and Darker shades of music.
 
 ## The Future
 - I eventually want it to be a very slick and easy to navigate website. Where you can quickly access specific pieces of information for reference, practice and learning. 
