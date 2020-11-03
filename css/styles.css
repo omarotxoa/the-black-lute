@@ -53,6 +53,14 @@ nav {
       padding-right: 20px;
       margin-right: 0; } }
 
+/* for images and diagrams. there will be plenty on the site */
+/* 
+For diagrams related to the fretboard's open position
+short rectangular image
+*/
+.fretboard--position-open {
+  max-width: 400px; }
+
 body {
   background-color: var(--purplish-gray);
   font-size: large;
