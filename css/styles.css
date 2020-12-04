@@ -1,6 +1,7 @@
 :root {
-  --purple: #5d3f79;
-  --purplish-gray: #f2f2f3; }
+  --purple: #5f3d8a;
+  --purplish-gray: #f2f2f3;
+  --black: #111111; }
 
 nav {
   display: flex;
@@ -11,7 +12,7 @@ nav {
   nav a,
   nav a:visited {
     text-decoration: none;
-    color: black; }
+    color: var(--purplish-gray); }
   nav a.current,
   nav a:hover {
     color: var(--purple);
@@ -62,9 +63,10 @@ short rectangular image
   max-width: 400px; }
 
 body {
-  background-color: var(--purplish-gray);
+  background-color: var(--black);
   font-size: large;
-  margin: 0; }
+  margin: 0;
+  color: var(--purplish-gray); }
   @media (min-width: 768px) {
     body {
       display: flex;
