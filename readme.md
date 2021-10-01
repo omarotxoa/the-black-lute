@@ -1,9 +1,2 @@
 # The Black Lute
-The Black Lute is a website I'm making to help organize and facilitate my learning. While it is primarily for myself, I will be designing and posting content in such a way that it'd be useful to other people as well. In this sense, the Black Lute is a website dedicated to providing resources for those interested in learning Flamenco and Darker shades of music.
-
-## The Future
-- I eventually want it to be a very slick and easy to navigate website. Where you can quickly access specific pieces of information for reference, practice and learning. 
-- I would like to create an app for compas in the future. Something simple that just helps new people keep time with the 12-beat structure.
-
-## Content
-The content will be written and shown in Diagrams or PDFs (Sheet Music). Simplicity is key here. Any explanations that go along with some things will be more akin to notes than description.
+The Black Lute  is a project started up as a result of me trying to make my own music on the guitar. I like the darker, sometimes dissonant but melodic shades of music: mexican folk, flamenco, darker blues, etc. I post content here for my convenience and to share with those who are like minded. This isn't a how-to website, but part of its intent is to help organize and facilitate my learning, and so you might also find useful resources that have helped me develop into a musician that creates his own music in his own way. I think I'm also coming to the realization that I'm a bit obsessed with Flamenco and I have the urge to collect and record a lot of Flamenco bits and pieces (falsetas, phrases, embellishments, etc).   
