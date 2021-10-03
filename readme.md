@@ -3,3 +3,9 @@ The Black Lute  is a project started up as a result of me trying to make my own 
 
 ## The Blog
 The blog is a space where I explore anything related to the persuit of music (whatever that means). I just know there's a lack of written content nowadays and this website (and the blog) are, in a way, made to combat that. 
+
+## Advertising and Marketing related stuff
+I hate having newsletter sign ups pop up in my face. 
+I hate having ads be intrusive - posted before, between, after and to the sides of content, etc. 
+
+In the case that monetization becomes feasible, The Black Lute will strive for relevant advertisement tastefully included and non intrusive. We won't force a person to sign up for our newsletter or have obvious atrocious pages with big text and testimonials and large buttons that insult the viewers intelligence and whose sole purpose is to manipulate the user into buying something. We look at such actions as unethical and instead will rely on providing actual quality content that the user will be happy to purchase or support. 
