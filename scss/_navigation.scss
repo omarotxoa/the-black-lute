@@ -49,12 +49,16 @@ nav {
     li {
         list-style: none;
         padding: 5px 0;
-    }
-    @media (min-width: 768px) {
+    } 
+}
+
+@media (min-width: 768px) {
+    .nav--menu {
         display: initial;
         border: 0;
         border-right: 1px dotted var(--purple);
         padding-right: 20px;
-        margin-right: 0;
+        margin: 0;
+        padding-top: 0px;
     }
 }
