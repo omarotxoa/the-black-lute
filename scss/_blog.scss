@@ -8,3 +8,9 @@ article {
         font-family: 'Roboto', sans-serif;
     }
 }
+
+@media (min-width: 768px) {
+    article h2.title {
+        margin-top: 0;
+    }
+}
