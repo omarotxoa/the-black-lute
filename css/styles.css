@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Yaldevi&display=swap");
 :root {
   --purple: #8c63c2;
-  --purplish-gray: #f2f2f3;
-  --black: #18141e; }
+  --purplish-gray: rgb(172, 141, 191);
+  --dark-purple: rgba(26, 17, 32, 0.52);
+  --black: #120f16; }
 
 nav {
   display: flex;
@@ -26,7 +27,9 @@ nav {
       background-color: transparent; } }
 
 .nav--button {
-  background-color: var(--purple);
+  background-color: var(--black);
+  border-bottom: 1px solid var(--purple);
+  outline: var(--purple);
   width: 100%;
   text-align: right;
   color: var(--purplish-gray);
@@ -79,28 +82,31 @@ body {
   text-shadow: #180640 0px 0px 10px;
   margin: 0;
   color: var(--purplish-gray); }
-  @media (min-width: 768px) {
-    body {
-      display: flex;
-      font-size: x-large; } }
+
+header {
+  text-align: center; }
+
+main {
+  background-color: var(--dark-purple);
+  padding: 10px;
+  border: 1px solid var(--purple); }
+
+a {
+  color: var(--purple);
+  text-decoration-style: dotted; }
 
 h1, h2, h3, h4 {
   font-family: 'Roboto Slab', serif;
   color: var(--purple); }
 
-h1 {
-  margin-top: 0; }
-  @media (min-width: 768px) {
-    h1 {
-      margin-top: 32px; } }
-
-main {
-  padding: 10px; }
-  @media (min-width: 768px) {
-    main {
-      width: 80%;
-      margin-left: 20%;
-      padding: 0 50px; }
-      main a {
-        color: var(--purple);
-        text-decoration-style: dotted; } }
+@media (min-width: 768px) {
+  h1 {
+    text-align: left;
+    margin-left: 20px; }
+  section {
+    width: 80%;
+    margin-left: 20%; }
+  main {
+    margin: 20px; }
+  main p:first-of-type {
+    margin-top: 0px; } }

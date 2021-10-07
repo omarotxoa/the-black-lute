@@ -11,33 +11,43 @@ body {
     text-shadow: #180640 0px 0px 10px;
     margin: 0;
     color: var(--purplish-gray);
-    @media (min-width: 768px) {
-        display: flex;
-        font-size: x-large;
-    }
 }
+
+header {
+    text-align: center;
+}
+
+main {
+    background-color: var(--dark-purple);
+    padding: 10px;
+    border: 1px solid var(--purple);
+}
+
+a {
+    color: var(--purple);
+    text-decoration-style: dotted;
+}
+
 
 h1, h2, h3, h4 {
     font-family: 'Roboto Slab', serif;
     color: var(--purple);
 }
 
-h1 {
-    margin-top: 0;
-    @media (min-width: 768px) {
-        margin-top: 32px;
+@media (min-width: 768px) {
+    h1 {
+        text-align: left;
+        margin-left: 20px;
+    }
+    section {
+        width: 80%;
+        margin-left: 20%;
+    }
+    main {
+        margin: 20px;
+    }
+    main p:first-of-type {
+        margin-top: 0px;
     }
 }
 
-main {
-    padding: 10px;
-    @media (min-width: 768px) {
-        width: 80%;
-        margin-left: 20%;
-        padding: 0 50px;
-        a {
-            color: var(--purple);
-            text-decoration-style: dotted;
-        }
-    }
-}

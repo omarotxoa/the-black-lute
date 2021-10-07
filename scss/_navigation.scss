@@ -24,7 +24,9 @@ nav {
 }
 
 .nav--button {
-    background-color: var(--purple);
+    background-color: var(--black);
+    border-bottom: 1px solid var(--purple);
+    outline: var(--purple);
     width:100%;
     text-align: right;
     color: var(--purplish-gray);
