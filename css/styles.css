@@ -80,6 +80,23 @@ article time {
   article h2.title {
     margin-top: 0; } }
 
+/* Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--purple) var(--dark-purple); }
+
+/* Chrome and Other Browsers */
+body::-webkit-scrollbar {
+  width: 11px; }
+
+body::-webkit-scrollbar-track {
+  background: var(--dark-purple); }
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--purple);
+  border-radius: 6px;
+  border: 3px solid var(--dark-purple); }
+
 body {
   background-color: var(--black);
   font-size: large;
