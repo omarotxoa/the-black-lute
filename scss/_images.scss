@@ -8,3 +8,30 @@ short rectangular image
 .fretboard--position-open {
     max-width: 400px;
 }
+
+main figure {
+    padding: 0;
+    margin: 0;
+}
+
+main figure img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+main figcaption {
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    main figure img { 
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    main figure img {
+      //  width: 60%;
+    }
+}
