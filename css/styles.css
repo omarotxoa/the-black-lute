@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Yaldevi&display=swap");
 :root {
-  --purple: #8c63c2;
-  --purplish-gray: rgb(172, 141, 191);
+  --purple: #a178d4;
   --dark-purple: rgba(26, 17, 32, 0.52);
-  --black: #120f16; }
+  --black: #323232; }
 
 nav {
   display: flex;
@@ -14,7 +13,7 @@ nav {
   nav a,
   nav a:visited {
     text-decoration: none;
-    color: var(--purplish-gray); }
+    color: white; }
   nav a.current,
   nav a:hover {
     color: var(--purple);
@@ -116,15 +115,15 @@ body {
   font-family: 'Yoldevi', sans-serif;
   text-shadow: #180640 0px 0px 10px;
   margin: 0;
-  color: var(--purplish-gray); }
+  color: white; }
 
 header {
   text-align: center; }
 
 main {
-  background-color: var(--dark-purple);
-  padding: 10px;
-  border: 1px solid var(--purple); }
+  padding: 15px;
+  border: 2px solid var(--purple);
+  background-color: #313131; }
 
 a {
   color: var(--purple);
@@ -132,7 +131,7 @@ a {
 
 h1, h2, h3, h4 {
   font-family: 'Roboto Slab', serif;
-  color: var(--purple); }
+  color: white; }
 
 @media (min-width: 768px) {
   h1 {

@@ -11,7 +11,7 @@ body {
     font-family: 'Yoldevi', sans-serif;
     text-shadow: #180640 0px 0px 10px;
     margin: 0;
-    color: var(--purplish-gray);
+    color: white;
 }
 
 header {
@@ -19,9 +19,9 @@ header {
 }
 
 main {
-    background-color: var(--dark-purple);
-    padding: 10px;
-    border: 1px solid var(--purple);
+    padding: 15px;
+    border: 2px solid var(--purple);
+    background-color: #313131;
 }
 
 a {
@@ -32,7 +32,7 @@ a {
 
 h1, h2, h3, h4 {
     font-family: 'Roboto Slab', serif;
-    color: var(--purple);
+    color: white;
 }
 
 @media (min-width: 768px) {
