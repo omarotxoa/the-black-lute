@@ -80,10 +80,6 @@ main figure img {
 main figcaption {
   text-align: center; }
 
-@media (min-width: 1024px) {
-  main figure img {
-    width: 70%; } }
-
 article h1 {
   margin-bottom: 0; }
 
