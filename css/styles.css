@@ -115,10 +115,21 @@ body {
   font-family: 'Yoldevi', sans-serif;
   text-shadow: #180640 0px 0px 10px;
   margin: 0;
-  color: white; }
+  color: #e2e2e2; }
 
-header {
-  text-align: center; }
+header,
+.site-name {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  justify-content: center; }
+
+.site-name {
+  padding: 0; }
+
+.site-name p {
+  font-size: 1.2em; }
 
 main {
   padding: 15px;
@@ -131,7 +142,10 @@ a {
 
 h1, h2, h3, h4 {
   font-family: 'Roboto Slab', serif;
-  color: white; }
+  color: #e2e2e2; }
+
+h1 {
+  padding-left: 20px; }
 
 @media (min-width: 768px) {
   h1 {
@@ -143,4 +157,13 @@ h1, h2, h3, h4 {
   main {
     margin: 20px; }
   main p:first-of-type {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+  nav.home-page {
+    padding-top: 138px; }
+  nav .site-name {
+    padding-top: 11px;
+    padding-bottom: 23px; }
+  nav .site-name img {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px; } }
