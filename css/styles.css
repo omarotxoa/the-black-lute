@@ -4,6 +4,31 @@
   --dark-purple: rgba(26, 17, 32, 0.52);
   --black: #323232; }
 
+.site-name {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+  padding: 0;
+  border-bottom: 1px solid var(--purple); }
+  .site-name img {
+    width: 35%;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px; }
+  .site-name p {
+    width: 55%;
+    font-size: 1.2em; }
+  .site-name .nav--button {
+    width: 10%;
+    border-bottom: none; }
+  @media (min-width: 768px) {
+    .site-name {
+      border-bottom: 0px; }
+      .site-name p {
+        display: none; } }
+
 nav,
 nav.home-page {
   display: flex;
@@ -49,16 +74,32 @@ nav.home-page {
     text-align: right;
     color: var(--purplish-gray);
     padding: 10px 20px; }
-    @media (min-width: 768px) {
-      nav .nav--button,
-      nav.home-page .nav--button {
-        display: none; } }
   @media (min-width: 768px) {
     nav,
     nav.home-page {
       width: 20%;
       position: fixed;
-      background-color: transparent; } }
+      background-color: transparent;
+      padding-top: 119px; }
+      nav .nav--button,
+      nav.home-page .nav--button {
+        display: none; }
+      nav .nav--menu,
+      nav.home-page .nav--menu {
+        display: initial;
+        border: 0;
+        border-right: 1px dotted var(--purple);
+        padding-right: 20px;
+        margin: 0;
+        padding-top: 0px; }
+      nav .site-name,
+      nav.home-page .site-name {
+        padding-bottom: 16px; }
+        nav .site-name img,
+        nav.home-page .site-name img {
+          width: 40px;
+          height: 40px;
+          padding-right: 10px; } }
 
 nav {
   display: flex;
@@ -71,40 +112,16 @@ nav {
     text-align: right;
     color: var(--purplish-gray);
     padding: 10px 20px; }
-    @media (min-width: 768px) {
+  @media (min-width: 768px) {
+    nav {
+      padding-top: 10px; }
+      nav .nav--menu {
+        margin-top: 23px; }
       nav .nav--button {
-        display: none; } }
-
-.site-name {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: left;
-  padding: 0;
-  border-bottom: 1px solid var(--purple); }
-  .site-name img {
-    width: 35%;
-    width: 30px;
-    height: 30px;
-    margin-left: 15px; }
-  .site-name p {
-    width: 55%; }
-  .site-name .nav--button {
-    width: 10%;
-    border-bottom: none; }
-
-.site-name p {
-  font-size: 1.2em; }
-
-@media (min-width: 768px) {
-  .nav--menu {
-    display: initial;
-    border: 0;
-    border-right: 1px dotted var(--purple);
-    padding-right: 20px;
-    margin: 0;
-    padding-top: 0px; } }
+        display: none; }
+      nav .site-name {
+        justify-content: flex-end;
+        margin-right: 10px; } }
 
 header {
   text-align: center; }
@@ -117,6 +134,17 @@ header.home-page .site-name img {
 header.home-page .site-name h1 {
   padding-left: 0px;
   margin-left: -30px; }
+
+@media (min-width: 768px) {
+  header.home-page .site-name {
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    padding: 20px; }
+    header.home-page .site-name h1 {
+      margin: 0px;
+      margin-left: 10px;
+      padding: 0; } }
 
 /* for images and diagrams. there will be plenty on the site */
 /* 
@@ -204,13 +232,4 @@ h1 {
     margin: 20px;
     border: 1px solid var(--purple); }
   main p:first-of-type {
-    margin-top: 0px; }
-  nav.home-page {
-    padding-top: 138px; }
-  nav .site-name {
-    padding-top: 11px;
-    padding-bottom: 23px; }
-  nav .site-name img {
-    width: 40px;
-    height: 40px;
-    padding-right: 10px; } }
+    margin-top: 0px; } }

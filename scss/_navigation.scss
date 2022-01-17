@@ -1,3 +1,34 @@
+.site-name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    padding: 0;
+    border-bottom: 1px solid var(--purple);
+    img {
+        width: 35%;
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+    }
+    p {
+        width: 55%;
+        font-size: 1.2em;
+    }
+    .nav--button {
+        width: 10%;
+        border-bottom: none;
+    }
+
+    @media(min-width: 768px) {
+        p {
+            display: none;
+        }
+        border-bottom: 0px;
+    }
+}
+
 nav,
 nav.home-page {
     display: flex;
@@ -32,6 +63,7 @@ nav.home-page {
             list-style: none;
             padding: 5px 0;
         } 
+        
     }
 
     .nav--button {
@@ -42,15 +74,37 @@ nav.home-page {
         text-align: right;
         color: var(--purplish-gray);
         padding: 10px 20px;
-        @media (min-width: 768px) {
-            display: none;
-        }
     }
 
     @media (min-width: 768px) {
         width: 20%;
         position: fixed;
         background-color: transparent;
+        padding-top: 119px;
+
+        .nav--button {
+            display: none;
+        }
+
+        .nav--menu {
+            display: initial;
+            border: 0;
+            border-right: 1px dotted var(--purple);
+            padding-right: 20px;
+            margin: 0;
+            padding-top: 0px;
+        }
+
+        .site-name {
+            padding-bottom: 16px;
+            img {
+                width: 40px;
+                height: 40px;
+                padding-right: 10px;
+            }
+        }
+        
+        
     }
 }
 
@@ -59,7 +113,6 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-
     .nav--button {
         border-bottom: 1px solid var(--purple);
         outline: var(--purple);
@@ -67,49 +120,21 @@ nav {
         text-align: right;
         color: var(--purplish-gray);
         padding: 10px 20px;
-        @media (min-width: 768px) {
+        
+    }
+
+    @media (min-width: 768px) {
+        padding-top: 10px;
+        .nav--menu {
+            margin-top: 23px;
+        }
+        .nav--button {
             display: none;
+        }
+        .site-name {
+            justify-content: flex-end;
+            margin-right: 10px;
         }
     }
 }
 
-.site-name {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: left;
-    padding: 0;
-    border-bottom: 1px solid var(--purple);
-    img {
-        width: 35%;
-        width: 30px;
-        height: 30px;
-        margin-left: 15px;
-    }
-    p {
-        width: 55%;
-    }
-    .nav--button {
-        width: 10%;
-        border-bottom: none;
-    }
-}
-
-
-
-.site-name p {
-    font-size: 1.2em;
-}
-
-
-@media (min-width: 768px) {
-    .nav--menu {
-        display: initial;
-        border: 0;
-        border-right: 1px dotted var(--purple);
-        padding-right: 20px;
-        margin: 0;
-        padding-top: 0px;
-    }
-}

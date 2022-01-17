@@ -15,3 +15,23 @@ header.home-page {
         }
     }
 }
+
+
+@media (min-width:768px) {
+    header.home-page {
+        .site-name {
+            justify-content: center;
+            align-content: center;
+            flex-direction: row;
+            padding: 20px;
+            h1 {
+                margin: 0px;
+                margin-left: 10px;
+                padding: 0;
+            }
+        }
+    }
+
+    header {
+    }
+}
