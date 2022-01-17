@@ -1,4 +1,5 @@
-nav {
+nav,
+nav.home-page {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -16,6 +17,36 @@ nav {
         text-decoration: underline;
         text-decoration-style: dotted;
     }
+
+    .nav--menu {
+        display: none;
+        text-align: right;
+        margin: 10px;
+        width: 100%;
+        border: 1px solid var(--purple);
+        padding: 10px;
+        &.show {
+            display: initial;
+        }
+        li {
+            list-style: none;
+            padding: 5px 0;
+        } 
+    }
+
+    .nav--button {
+        background-color: var(--black);
+        border-bottom: 1px solid var(--purple);
+        outline: var(--purple);
+        width:100%;
+        text-align: right;
+        color: var(--purplish-gray);
+        padding: 10px 20px;
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+
     @media (min-width: 768px) {
         width: 20%;
         position: fixed;
@@ -23,34 +54,54 @@ nav {
     }
 }
 
-.nav--button {
-    background-color: var(--black);
-    border-bottom: 1px solid var(--purple);
-    outline: var(--purple);
-    width:100%;
-    text-align: right;
-    color: var(--purplish-gray);
-    padding: 10px 20px;
-    @media (min-width: 768px) {
-        display: none;
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    .nav--button {
+        border-bottom: 1px solid var(--purple);
+        outline: var(--purple);
+        width:100%;
+        text-align: right;
+        color: var(--purplish-gray);
+        padding: 10px 20px;
+        @media (min-width: 768px) {
+            display: none;
+        }
     }
 }
 
-.nav--menu {
-    display: none;
-    text-align: right;
-    margin: 10px;
+.site-name {
     width: 100%;
-    border: 1px solid var(--purple);
-    padding: 10px;
-    &.show {
-        display: initial;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    padding: 0;
+    border-bottom: 1px solid var(--purple);
+    img {
+        width: 35%;
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
     }
-    li {
-        list-style: none;
-        padding: 5px 0;
-    } 
+    p {
+        width: 55%;
+    }
+    .nav--button {
+        width: 10%;
+        border-bottom: none;
+    }
 }
+
+
+
+.site-name p {
+    font-size: 1.2em;
+}
+
 
 @media (min-width: 768px) {
     .nav--menu {

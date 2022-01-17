@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'navigation';
+@import 'header';
 @import 'images';
 @import 'blog';
 @import 'scrollbar';
@@ -12,23 +13,6 @@ body {
     text-shadow: #180640 0px 0px 10px;
     margin: 0;
     color: rgb(226, 226, 226);
-}
-
-header,
-.site-name {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 0 10px;
-    justify-content: center;
-}
-
-.site-name {
-    padding: 0;
-}
-
-.site-name p {
-    font-size: 1.2em;
 }
 
 main {

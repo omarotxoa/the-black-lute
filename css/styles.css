@@ -4,51 +4,98 @@
   --dark-purple: rgba(26, 17, 32, 0.52);
   --black: #323232; }
 
-nav {
+nav,
+nav.home-page {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end; }
-  nav ul {
+  nav ul,
+  nav.home-page ul {
     margin: 0; }
   nav a,
-  nav a:visited {
+  nav a:visited,
+  nav.home-page a,
+  nav.home-page a:visited {
     text-decoration: none;
     color: white; }
   nav a.current,
-  nav a:hover {
+  nav a:hover,
+  nav.home-page a.current,
+  nav.home-page a:hover {
     color: var(--purple);
     text-decoration: underline;
     text-decoration-style: dotted; }
+  nav .nav--menu,
+  nav.home-page .nav--menu {
+    display: none;
+    text-align: right;
+    margin: 10px;
+    width: 100%;
+    border: 1px solid var(--purple);
+    padding: 10px; }
+    nav .nav--menu.show,
+    nav.home-page .nav--menu.show {
+      display: initial; }
+    nav .nav--menu li,
+    nav.home-page .nav--menu li {
+      list-style: none;
+      padding: 5px 0; }
+  nav .nav--button,
+  nav.home-page .nav--button {
+    background-color: var(--black);
+    border-bottom: 1px solid var(--purple);
+    outline: var(--purple);
+    width: 100%;
+    text-align: right;
+    color: var(--purplish-gray);
+    padding: 10px 20px; }
+    @media (min-width: 768px) {
+      nav .nav--button,
+      nav.home-page .nav--button {
+        display: none; } }
   @media (min-width: 768px) {
-    nav {
+    nav,
+    nav.home-page {
       width: 20%;
       position: fixed;
       background-color: transparent; } }
 
-.nav--button {
-  background-color: var(--black);
-  border-bottom: 1px solid var(--purple);
-  outline: var(--purple);
-  width: 100%;
-  text-align: right;
-  color: var(--purplish-gray);
-  padding: 10px 20px; }
-  @media (min-width: 768px) {
-    .nav--button {
-      display: none; } }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; }
+  nav .nav--button {
+    border-bottom: 1px solid var(--purple);
+    outline: var(--purple);
+    width: 100%;
+    text-align: right;
+    color: var(--purplish-gray);
+    padding: 10px 20px; }
+    @media (min-width: 768px) {
+      nav .nav--button {
+        display: none; } }
 
-.nav--menu {
-  display: none;
-  text-align: right;
-  margin: 10px;
+.site-name {
   width: 100%;
-  border: 1px solid var(--purple);
-  padding: 10px; }
-  .nav--menu.show {
-    display: initial; }
-  .nav--menu li {
-    list-style: none;
-    padding: 5px 0; }
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: left;
+  padding: 0;
+  border-bottom: 1px solid var(--purple); }
+  .site-name img {
+    width: 35%;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px; }
+  .site-name p {
+    width: 55%; }
+  .site-name .nav--button {
+    width: 10%;
+    border-bottom: none; }
+
+.site-name p {
+  font-size: 1.2em; }
 
 @media (min-width: 768px) {
   .nav--menu {
@@ -58,6 +105,18 @@ nav {
     padding-right: 20px;
     margin: 0;
     padding-top: 0px; } }
+
+header {
+  text-align: center; }
+
+header.home-page .site-name img {
+  width: 35px;
+  height: 35px;
+  margin-left: 0; }
+
+header.home-page .site-name h1 {
+  padding-left: 0px;
+  margin-left: -30px; }
 
 /* for images and diagrams. there will be plenty on the site */
 /* 
@@ -116,20 +175,6 @@ body {
   text-shadow: #180640 0px 0px 10px;
   margin: 0;
   color: #e2e2e2; }
-
-header,
-.site-name {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 0 10px;
-  justify-content: center; }
-
-.site-name {
-  padding: 0; }
-
-.site-name p {
-  font-size: 1.2em; }
 
 main {
   padding: 15px;
