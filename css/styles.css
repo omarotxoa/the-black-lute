@@ -195,6 +195,15 @@ body::-webkit-scrollbar-thumb {
   border-radius: 6px;
   border: 3px solid var(--dark-purple); }
 
+svg text {
+  fill: white; }
+
+svg path {
+  fill: white; }
+
+svg rect[stroke-width="0.3"] {
+  fill: white; }
+
 body {
   background-color: var(--black);
   font-size: x-large;
